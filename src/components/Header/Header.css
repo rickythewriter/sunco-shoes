@@ -8,20 +8,6 @@
     border-bottom: solid var(--line-light-grey);
 }
 
-#header-logo {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    font-family: 'Inter', sans-serif;
-    font-weight: 600;
-    font-size: 16px;
-}
-
-#logo-icon {
-    max-width: 24px;
-    object-fit: contain;
-}
-
 #view-cart {
     display: flex;
     flex-direction: row;
