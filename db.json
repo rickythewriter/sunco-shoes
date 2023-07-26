@@ -134,73 +134,116 @@
             "id": 1,
             "shoe_id": 1,
             "url": "",
-            "order": 1
+            "image_position_id": 1
         },
         {
             "id": 2,
             "shoe_id": 1,
             "url": "",
-            "order": 2
+            "image_position_id": 2
         },
         {
             "id": 3,
             "shoe_id": 1,
             "url": "",
-            "order": 3
+            "image_position_id": 3
         },
         {
             "id": 4,
-            "shoe_id": 2,
+            "shoe_id": 1,
             "url": "",
-            "order": 1
+            "image_position_id": 4
         },
+
         {
             "id": 5,
             "shoe_id": 2,
             "url": "",
-            "order": 2
+            "image_position_id": 1
         },
         {
             "id": 6,
             "shoe_id": 2,
             "url": "",
-            "order": 3
+            "image_position_id": 2
         },
         {
             "id": 7,
-            "shoe_id": 3,
+            "shoe_id": 2,
             "url": "",
-            "order": 1
+            "image_position_id": 3
         },
         {
             "id": 8,
-            "shoe_id": 3,
+            "shoe_id": 2,
             "url": "",
-            "order": 2
+            "image_position_id": 4
         },
         {
             "id": 9,
             "shoe_id": 3,
             "url": "",
-            "order": 3
+            "image_position_id": 1
         },
         {
             "id": 10,
-            "shoe_id": 4,
+            "shoe_id": 3,
             "url": "",
-            "order": 1
+            "image_position_id": 2
         },
         {
             "id": 11,
-            "shoe_id": 4,
+            "shoe_id": 3,
             "url": "",
-            "order": 2
+            "image_position_id": 3
         },
         {
             "id": 12,
+            "shoe_id": 3,
+            "url": "",
+            "image_position_id": 4
+        },
+        {
+            "id": 13,
             "shoe_id": 4,
             "url": "",
-            "order": 3
+            "image_position_id": 1
+        },
+        {
+            "id": 14,
+            "shoe_id": 4,
+            "url": "",
+            "image_position_id": 2
+        },
+        {
+            "id": 15,
+            "shoe_id": 4,
+            "url": "",
+            "image_position_id": 3
+        },
+        {
+            "id": 16,
+            "shoe_id": 4,
+            "url": "",
+            "image_position_id": 4
+        }
+    ],
+    "image_position": [
+        {
+            "id": 1,
+            "position": "CAROUSEL_1"
+        },
+        {
+            "id": 2,
+            "position": "CAROUSEL_2"
+        },
+        {
+            "id": 3,
+            "position": "CAROUSEL_3"
+        },
+        {
+            "id": 4,
+            "position": "DESCRIPTION"
         }
     ]
 }
