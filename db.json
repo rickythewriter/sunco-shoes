@@ -228,7 +228,7 @@
             "image_position_id": 4
         }
     ],
-    "image_position": [
+    "image_positions": [
         {
             "id": 1,
             "position": "CAROUSEL_1"
