@@ -1,0 +1,206 @@
+{
+    "shoes": [
+        {
+            "id": 1,
+            "brand": "Off-White",
+            "model": "Out Of Office \"Ooo\" sneakers",
+            "price": 775,
+            "description": "Energize your look with a fresh take on heritage adidas style. The adidas Daily 3.0 Shoes cut a classic profile with a modern suede upper. Your walk across campus or commute across town has never looked or felt this good."
+        },
+        {
+            "id": 2,
+            "brand": "Nike",
+            "model": "Nike Gamma Force",
+            "price": 200,
+            "description": "Energize your look with a fresh take on heritage adidas style. The adidas Daily 3.0 Shoes cut a classic profile with a modern suede upper. Your walk across campus or commute across town has never looked or felt this good."
+        },
+        {
+            "id": 3,
+            "brand": "Nike",
+            "model": "Cosmic Unity 3",
+            "price": 160,
+            "description": "Energize your look with a fresh take on heritage adidas style. The adidas Daily 3.0 Shoes cut a classic profile with a modern suede upper. Your walk across campus or commute across town has never looked or felt this good."
+        },
+        {
+            "id": 4,
+            "brand": "adidas",
+            "model": "DAILY 3.0 SHOES",
+            "price": 98.99,
+            "description": "Energize your look with a fresh take on heritage adidas style. The adidas Daily 3.0 Shoes cut a classic profile with a modern suede upper. Your walk across campus or commute across town has never looked or felt this good."
+        }
+    ],
+    "features": [
+        {
+            "id": 1,
+            "feature": "Regular fit"
+        },
+        {
+            "id": 2,
+            "feature": "Lace closure"
+        },
+        {
+            "id": 3,
+            "feature": "Rubber outsole with vulcanized look"
+        },
+        {
+            "id": 4,
+            "feature": "Imported"
+        }
+    ],
+    "shoe_features": [
+        {
+            "id": 1,
+            "shoe_id": 1,
+            "feature_id": 1
+        },
+        {
+            "id": 2,
+            "shoe_id": 1,
+            "feature_id": 2
+        },
+        {
+            "id": 3,
+            "shoe_id": 1,
+            "feature_id": 3
+        },
+        {
+            "id": 4,
+            "shoe_id": 1,
+            "feature_id": 4
+        },
+        {
+            "id": 5,
+            "shoe_id": 2,
+            "feature_id": 1
+        },
+        {
+            "id": 6,
+            "shoe_id": 2,
+            "feature_id": 2
+        },
+        {
+            "id": 7,
+            "shoe_id": 2,
+            "feature_id": 3
+        },
+        {
+            "id": 8,
+            "shoe_id": 2,
+            "feature_id": 4
+        },
+        {
+            "id": 9,
+            "shoe_id": 3,
+            "feature_id": 1
+        },
+        {
+            "id": 10,
+            "shoe_id": 3,
+            "feature_id": 2
+        },
+        {
+            "id": 11,
+            "shoe_id": 3,
+            "feature_id": 3
+        },
+        {
+            "id": 12,
+            "shoe_id": 3,
+            "feature_id": 4
+        },
+        {
+            "id": 13,
+            "shoe_id": 4,
+            "feature_id": 1
+        },
+        {
+            "id": 14,
+            "shoe_id": 4,
+            "feature_id": 2
+        },
+        {
+            "id": 15,
+            "shoe_id": 4,
+            "feature_id": 3
+        },
+        {
+            "id": 16,
+            "shoe_id": 4,
+            "feature_id": 4
+        }
+    ],
+    "images": [
+        {
+            "id": 1,
+            "shoe_id": 1,
+            "url": "",
+            "order": 1
+        },
+        {
+            "id": 2,
+            "shoe_id": 1,
+            "url": "",
+            "order": 2
+        },
+        {
+            "id": 3,
+            "shoe_id": 1,
+            "url": "",
+            "order": 3
+        },
+        {
+            "id": 4,
+            "shoe_id": 2,
+            "url": "",
+            "order": 1
+        },
+        {
+            "id": 5,
+            "shoe_id": 2,
+            "url": "",
+            "order": 2
+        },
+        {
+            "id": 6,
+            "shoe_id": 2,
+            "url": "",
+            "order": 3
+        },
+        {
+            "id": 7,
+            "shoe_id": 3,
+            "url": "",
+            "order": 1
+        },
+        {
+            "id": 8,
+            "shoe_id": 3,
+            "url": "",
+            "order": 2
+        },
+        {
+            "id": 9,
+            "shoe_id": 3,
+            "url": "",
+            "order": 3
+        },
+        {
+            "id": 10,
+            "shoe_id": 4,
+            "url": "",
+            "order": 1
+        },
+        {
+            "id": 11,
+            "shoe_id": 4,
+            "url": "",
+            "order": 2
+        },
+        {
+            "id": 12,
+            "shoe_id": 4,
+            "url": "",
+            "order": 3
+        }
+    ]
+}
