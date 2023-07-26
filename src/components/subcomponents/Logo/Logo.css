@@ -7,6 +7,10 @@
     font-size: 16px;
 }
 
+#header-logo {
+    cursor: pointer;
+}
+
 #logo-icon {
     max-width: 24px;
     object-fit: contain;
