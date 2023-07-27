@@ -5,6 +5,7 @@
     background-color: var(--hero-bg);
     border-radius: 20px;
     margin: 20px;
+    padding: 0 4px;
 }
 
 #home-promo > #promo-img {
