@@ -1,0 +1,22 @@
+import React from "react";
+import "./Footer.css";
+import Logo from '../subcomponents/Logo';
+import instagram from '../../assets/icons/instagram.svg'
+import twitter from '../../assets/icons/twitter.svg'
+import youtube from '../../assets/icons/youtube.svg'
+
+export default function Footer() {
+    return (
+        <footer id="footer">
+            <div id="footer-logo">
+                <Logo darkBackground={true} />
+            </div>
+            <p id="footer-text">© 2023 dot.cards text task. All rights reserved</p>
+            <div id="footer-social">
+                <img id="instagram-icon" className="social-icon" src={instagram} />
+                <img id="twitter-icon" className="social-icon" src={twitter} />
+                <img id="youtube-icon" className="social-icon" src={youtube} />
+            </div>
+        </footer>
+    )
+}
