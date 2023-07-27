@@ -1,9 +1,17 @@
-#recs {
-    margin: 0 20px;
+#recs > h2 {
+    margin: 20px;
 }
 
 #rec-reel {
     display: flex;
     flex-direction: row;
     gap: 16px;
+    width: 100%;
+    overflow: scroll;
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+    scrollbar-width: none; /* Firefox */
+}
+
+#rec-reel::-webkit-scrollbar { /* Chrome */
+    display: none;
 }
