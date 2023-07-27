@@ -34,12 +34,12 @@ const RecCard: React.FC<IProps> = ({product}) => {
     }, [])
 
     return (
-        <>
+        <div id="reccard">
             <img className="reccard reccard-img" src={imageUrl}/>
             <h3 className="reccard reccard-brand">{product.brand}</h3>
             <p className="reccard reccard-model">{product.model}</p>
             <h3 className="reccard reccard-price">{`$${product.price}`}</h3>
-        </>
+        </div>
         
     )
 }

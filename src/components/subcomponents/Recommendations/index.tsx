@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react"
 import RecCard from "../RecCard"
+import './Recommendations.css'
 
 /* Mock Server on Port 4200 */
 const PRODUCTS_API_BASE_URL = 'http://localhost:4200/shoes';
@@ -34,15 +35,15 @@ export default function Recommendations() {
     return (
         <>
             <h2>Explore our latest drops</h2>
-            <ul>
-            {
-                recommendations.map( recommendation => {
-                    return (
-                        <RecCard product={recommendation}/>
-                    )
-                })
-            }
-            </ul>
+            <section id="rec-reel">
+                {
+                    recommendations.map(recommendation => {
+                        return (
+                            <RecCard product={recommendation} />
+                        )
+                    })
+                }
+            </section>
         </>
     )
 }
