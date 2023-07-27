@@ -7,12 +7,14 @@ export default function Promo() {
     return (
         <div id="home-promo">
             <img id="promo-img" src={promoImg} />
-            <h2 id="discount">25% OFF</h2>
-            <h1 id="title">Summer Sale</h1>
-            <caption>Discover our summer styles with discount</caption>
-            <div id="shop-now-button">
-                Shop Now
-                <img className="arrow-right" src={arrowRight} />
+            <div id="promo-content">
+                <h2 id="discount">25% OFF</h2>
+                <h1 id="title">Summer Sale</h1>
+                <caption id="caption">Discover our summer styles with discount</caption>
+                <div id="shop-now-button">
+                    Shop Now
+                    <img className="arrow-right" src={arrowRight} />
+                </div>
             </div>
         </div>
     )    
