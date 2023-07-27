@@ -56,9 +56,11 @@
     .reccard-img {
 
         --rec-reel-width: (100vw - var(--desktop-horizontal-margins) * 2);
+        --number-of-gaps: 3;
+        --number-of-cards: 4;
 
         max-width: 522px;
-        width: calc((var(--rec-reel-width) / 4 - ((var(--reccards-gap) * 3) / 4)) );
+        width: calc((var(--rec-reel-width) / var(--number-of-cards) - ((var(--reccards-gap) * var(--number-of-gaps)) / var(--number-of-cards))) );
     }
 
     .reccard-brand {
