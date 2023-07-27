@@ -1,3 +1,7 @@
+#recs {
+    margin: 0 20px;
+}
+
 #rec-reel {
     display: flex;
     flex-direction: row;

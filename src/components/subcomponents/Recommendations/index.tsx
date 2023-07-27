@@ -33,9 +33,9 @@ export default function Recommendations() {
     }, []);
 
     return (
-        <>
+        <section id="recs">
             <h2>Explore our latest drops</h2>
-            <section id="rec-reel">
+            <div id="rec-reel">
                 {
                     recommendations.map(recommendation => {
                         return (
@@ -43,7 +43,7 @@ export default function Recommendations() {
                         )
                     })
                 }
-            </section>
-        </>
+            </div>
+        </section>
     )
 }
