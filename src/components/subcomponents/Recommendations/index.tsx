@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react"
+import RecCard from "../RecCard"
 
 /* Mock Server on Port 4200 */
-const PRODUCTS_API_BASE_URL = 'http://localhost:4200/shoes'
+const PRODUCTS_API_BASE_URL = 'http://localhost:4200/shoes';
 
 interface IProductData {
     product: {
@@ -17,6 +18,7 @@ export default function Recommendations() {
 
     const [recommendations, setRecommendations] = useState<IProductData["product"]>([])
 
+    /* Fetch Recommended Products */
     useEffect(() => {
         const fetchData = async () => {
             const url = new URL(PRODUCTS_API_BASE_URL)
@@ -36,7 +38,7 @@ export default function Recommendations() {
             {
                 recommendations.map( recommendation => {
                     return (
-                        <li key={recommendation.id}>{`${recommendation.brand} ${recommendation.model}`}</li>
+                        <RecCard product={recommendation}/>
                     )
                 })
             }
