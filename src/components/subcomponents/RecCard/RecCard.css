@@ -60,4 +60,16 @@
         max-width: 522px;
         width: calc((var(--rec-reel-width) / 4 - ((var(--reccards-gap) * 3) / 4)) );
     }
+
+    .reccard-brand {
+        font-size: 20px;
+    }
+
+    .reccard-model {
+        font-size: 16px;
+    }
+
+    .reccard-price {
+        font-size: 18px;
+    }
 }
