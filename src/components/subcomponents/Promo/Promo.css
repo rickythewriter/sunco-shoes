@@ -60,6 +60,10 @@
     gap: 10px;
 }
 
+#home-promo #shop-now-button:hover {
+    cursor: pointer;
+}
+
 @media screen and (width >=960px) {
     #home-promo {
         flex-direction: row-reverse;
