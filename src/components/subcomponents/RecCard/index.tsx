@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import './RecCard.css'
 
 const PRODUCT_IMAGES_API_BASE_URL = 'http://localhost:4200/images';
 
@@ -33,7 +34,13 @@ const RecCard: React.FC<IProps> = ({product}) => {
     }, [])
 
     return (
-        <li key={product.id}>{`${product.brand} ${product.model} - ${imageUrl}`}</li>
+        <>
+            <img className="reccard reccard-img" src={imageUrl}/>
+            <h3 className="reccard reccard-brand">{product.brand}</h3>
+            <p className="reccard reccard-model">{product.model}</p>
+            <h3 className="reccard reccard-price">{`$${product.price}`}</h3>
+        </>
+        
     )
 }
 
