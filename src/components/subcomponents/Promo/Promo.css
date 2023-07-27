@@ -1,0 +1,57 @@
+#home-promo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    background-color: var(--hero-bg);
+    border-radius: 20px;
+    margin: 20px;
+}
+
+#home-promo > #promo-img {
+    margin-top: 32px;
+    align-self: center;
+    max-width: 207px;
+    object-fit: contain;
+}
+
+#home-promo > #discount {
+    margin-top: 20px;
+    margin-bottom: 0;
+    color: var(--orange);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    align-self: center;
+}
+
+#home-promo > #title {
+    align-self: center;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+    margin: 0;
+}
+
+#home-promo > caption {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: var(--dark-grey);
+    margin-top: 20px;
+    margin-bottom: 36px;
+}
+
+#home-promo > #shop-now-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    background-color: var(--black);
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 12px 80px;
+    margin: 0 20px 40px;
+    gap: 10px;
+}
