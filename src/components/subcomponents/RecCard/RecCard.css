@@ -37,3 +37,27 @@
     margin-bottom: 24px;
     line-height: 20px;
 }
+
+@media screen and (width >=960px) {
+
+    #reccard {
+        --desktop-horizontal-margins: 162px;
+        --reccards-gap: 24px;
+    }
+
+    #reccard:first-child {
+        margin-left: 0;
+    }
+
+    #reccard:last-child {
+        margin-right: 0;
+    }
+
+    .reccard-img {
+
+        --rec-reel-width: (100vw - var(--desktop-horizontal-margins) * 2);
+
+        max-width: 1092px;
+        width: calc((var(--rec-reel-width) / 4 - ((var(--reccards-gap) * 3) / 4)) );
+    }
+}

@@ -15,3 +15,18 @@
 #rec-reel::-webkit-scrollbar { /* Chrome */
     display: none;
 }
+
+@media screen and (width >=960px) {
+    #recs {
+        margin: 44px 162px;
+    }
+
+    #recs > h2 {
+        margin-left: 0;
+    }
+
+    #rec-reel {
+        justify-content: space-between;
+        /* max-width: 1116px; */
+    }
+}
