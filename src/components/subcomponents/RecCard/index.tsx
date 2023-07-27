@@ -23,7 +23,7 @@ const RecCard: React.FC<IProps> = ({product}) => {
             const url = new URL(PRODUCT_IMAGES_API_BASE_URL)
             const productId = product.id.toString();
             url.searchParams.set('shoe_id', productId)
-            url.searchParams.set('image_position_id', '1');
+            url.searchParams.set('image_position_id', '5');
             const response = await fetch(url);
             const imageData = await response.json()
             const imageUrl = imageData[0].url;
