@@ -154,7 +154,6 @@
             "url": "https://github.com/rickythewriter/sunco-shoes/blob/master/public/images-product/1-desc.png?raw=true",
             "image_position_id": 4
         },
-
         {
             "id": 5,
             "shoe_id": 2,
@@ -226,6 +225,30 @@
             "shoe_id": 4,
             "url": "https://github.com/rickythewriter/sunco-shoes/blob/master/public/images-product/4-desc.png?raw=true",
             "image_position_id": 4
+        },
+        {
+            "id": 17,
+            "shoe_id": 1,
+            "url": "https://github.com/rickythewriter/sunco-shoes/blob/master/public/images-product/1-prev.png?raw=true",
+            "image_position_id": 5
+        },
+        {
+            "id": 18,
+            "shoe_id": 2,
+            "url": "https://github.com/rickythewriter/sunco-shoes/blob/master/public/images-product/2-prev.png?raw=true",
+            "image_position_id": 5
+        },
+        {
+            "id": 19,
+            "shoe_id": 3,
+            "url": "https://github.com/rickythewriter/sunco-shoes/blob/master/public/images-product/3-prev.png?raw=true",
+            "image_position_id": 5
+        },
+        {
+            "id": 20,
+            "shoe_id": 4,
+            "url": "https://github.com/rickythewriter/sunco-shoes/blob/master/public/images-product/4-prev.png?raw=true",
+            "image_position_id": 5
         }
     ],
     "image_positions": [
@@ -244,6 +267,10 @@
         {
             "id": 4,
             "position": "DESCRIPTION"
+        },
+        {
+            "id": 5,
+            "position": "PREVIEW"
         }
     ]
 }
