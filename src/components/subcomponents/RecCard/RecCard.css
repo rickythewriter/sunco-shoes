@@ -57,7 +57,7 @@
 
         --rec-reel-width: (100vw - var(--desktop-horizontal-margins) * 2);
 
-        max-width: 1092px;
+        max-width: 522px;
         width: calc((var(--rec-reel-width) / 4 - ((var(--reccards-gap) * 3) / 4)) );
     }
 }
