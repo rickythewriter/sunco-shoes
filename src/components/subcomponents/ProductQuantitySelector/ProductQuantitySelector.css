@@ -1,0 +1,142 @@
+#product-quantity-selector {
+
+    --horizontal-padding: 27px;
+
+    margin: 24px 20px;
+}
+
+#product-brand {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--black);
+    line-height: 24px;
+    margin-top: 0;
+    margin-bottom: 6px;
+}
+
+#product-model {
+    font-weight: normal;
+    font-size: 15px;
+    color: var(--dark-grey);
+    margin: 13.5px 0;
+}
+
+#product-price {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+    font-weight: medium;
+    color: var(--black);
+    line-height: 18px;
+}
+
+#quantity-selector-border {
+    margin: 0 calc(-1 * var(--horizontal-padding));
+}
+
+#product-quantity-heading {
+    margin: 18px 0 12px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: bold;
+    font-size: 13.5px;
+    line-height: 15px;
+}
+
+#quantity-selector {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    border: solid 1px var(--line-light-grey);
+    border-radius: 7.5px;
+    padding: 9px 12px;
+    max-width: 102px;
+}
+
+.quantity-selector-control {
+    height: 18px;
+    width: 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.minus-inactive {
+    opacity: 0.2;
+}
+
+#product-quantity {
+    font-weight: bold;
+    font-size: 13.5px;
+    margin: 0;
+}
+
+#add-to-cart-button {
+    margin: 25px 0 24px;
+    padding: 14px 0;
+    background-color: var(--black);
+    color: var(--white);
+    text-align: center;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#add-to-cart-button:hover,
+.chevron {
+    cursor: pointer
+}
+
+@media screen and (width >=960px) {
+    #product-quantity-selector {
+        width: 47%;
+        margin: 20px 0;
+    }
+
+    #product-brand {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    #product-model {
+        font-size: 20px;
+    }
+
+    #product-price {
+        font-size: 24px;
+        line-height: 24px;
+    }
+
+    #product-quantity-heading {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    #quantity-selector {
+        gap: 16px;
+        border-radius: 10px;
+    }
+
+    .quantity-selector-control {
+        height: 24px;
+        width: 24px;
+    }
+
+    #product-quantity {
+        font-size: 18px;
+    }
+
+    #add-to-cart-button {
+        padding: 20px 0;
+        font-size: 18px;
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (width >= 1440px) {
+    #quantity-selector {
+        margin-bottom: 12.6%;
+    }
+}

@@ -1,46 +1,79 @@
-# Getting Started with Create React App
+# Sun Co - dot. Cards Technical Assessment - Ricky Thang
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A basic e-commerce store with items and a cart, based on this [design](https://www.figma.com/community/file/1265784090042206235).
 
-## Available Scripts
+YouTube Video Demo: [https://youtu.be/OnRkHUSd4uU](https://youtu.be/OnRkHUSd4uU)
 
-In the project directory, you can run:
+## Technologies Used
 
-### `npm start`
+- TypeScript
+- React
+- json-server
+- CSS
+- git
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Features
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Home Page
 
-### `npm test`
+#### Header
+![Header](https://github.com/rickythewriter/sunco-shoes/blob/master/docs/screens/home-header.png?raw=true)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### List of Four Items
+![List](https://github.com/rickythewriter/sunco-shoes/blob/master/docs/screens/home-list.png?raw=true)
 
-### `npm run build`
+### Product Page
+![Product Page](https://github.com/rickythewriter/sunco-shoes/blob/master/docs/screens/product.png?raw=true)
+- Information
+- Image Carousel
+- Quantity Selector
+- Add Items
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### View Cart
+![View Cart](https://github.com/rickythewriter/sunco-shoes/blob/master/docs/screens/view-cart.png?raw=true)
+- Summary of Charges
+- Thumbnail and Quantity
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Responsive Design
+![Responsive](https://github.com/rickythewriter/sunco-shoes/blob/master/docs/screens/responsive.png?raw=true)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Installation
 
-### `npm run eject`
+1. Clone this repository.
+      ```bash
+      git clone https://github.com/rickythewriter/sunco-shoes
+      ```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+2. Navigate into the repository.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. Install dependencies.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+      ```bash
+      npm install
+      ```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+4. In a terminal, run the mock server, within the repository directory.
 
-## Learn More
+   ```bash
+   npx json-server -p 4200 --watch db.json 
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+5. In a separate terminal, run the React app, within the repository directory.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   ```bash
+   npm start
+   ```
+
+## Wiki Docs
+
+Includes database schema, and front-end routes.
+
+https://github.com/rickythewriter/sunco-shoes/wiki
+
+## Creator - Ricky Thang
+
+- [GitHub](https://github.com/rickythewriter)
+- [Portfolio](rickythang.com)
+- [LinkedIn](https://www.linkedin.com/in/ricky-thang-88307a100)
+
+

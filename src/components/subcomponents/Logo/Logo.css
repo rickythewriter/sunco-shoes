@@ -1,0 +1,20 @@
+#header-logo {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+#header-logo {
+    cursor: pointer;
+}
+
+#logo-icon {
+    max-width: 24px;
+    object-fit: contain;
+}
+
+.white-text {
+    color: var(--white);
+}

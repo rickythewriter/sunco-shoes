@@ -1,0 +1,77 @@
+#reccard:first-child {
+    margin-left: 20px;
+}
+
+#reccard:last-child {
+    margin-right: 20px;
+}
+
+.reccard {
+    margin: 0;
+}
+
+.reccard-img {
+    max-width: 213px;
+    margin-bottom: 18px;
+}
+
+.reccard-brand {
+    font-family: 'DM Sans', sans-serif; 
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 6px;
+    line-height: 18px;
+}
+
+.reccard-model {
+    font-size: 14px;
+    color: var(--dark-grey);
+    margin-bottom: 14px;
+    line-height: 18px;
+}
+
+.reccard-price {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: medium;
+    font-size: 16px;
+    margin-bottom: 24px;
+    line-height: 20px;
+}
+
+@media screen and (width >=960px) {
+
+    #reccard {
+        --desktop-horizontal-margins: 162px;
+        --reccards-gap: 24px;
+    }
+
+    #reccard:first-child {
+        margin-left: 0;
+    }
+
+    #reccard:last-child {
+        margin-right: 0;
+    }
+
+    .reccard-img {
+
+        --rec-reel-width: (100vw - var(--desktop-horizontal-margins) * 2);
+        --number-of-gaps: 3;
+        --number-of-cards: 4;
+
+        max-width: 522px;
+        width: calc((var(--rec-reel-width) / var(--number-of-cards) - ((var(--reccards-gap) * var(--number-of-gaps)) / var(--number-of-cards))) );
+    }
+
+    .reccard-brand {
+        font-size: 20px;
+    }
+
+    .reccard-model {
+        font-size: 16px;
+    }
+
+    .reccard-price {
+        font-size: 18px;
+    }
+}
