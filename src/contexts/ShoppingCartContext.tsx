@@ -3,6 +3,7 @@ import { createContext, useEffect, useState } from "react";
 interface IItems {
     item: {
         id: number,
+        price: number,
         quantity: number
     }[];
 }
@@ -13,7 +14,9 @@ interface IProps {
 
 export type ShoppingCartContextType = {
     productsInCart: IItems["item"],
-    addToCart: (productId: number, quantity: number) => void
+    addToCart: (productId: number, price: number, quantity: number) => void,
+    updateQuantityInCart: (productId: number, quantity: number) => void,
+    removeItemFromCart: (productId: number) => void
 };
 
 export const ShoppingCartContext = createContext<ShoppingCartContextType | null>(null);
@@ -38,9 +41,10 @@ const ShoppingCartContextProvider: React.FC<IProps> = ({ children }) => {
         console.log('local storage: ', localStorage.getItem("productsInCart"))
     }, [productsInCart])
 
-    const addToCart = (productId: number, quantity: number = 1) => {
+    const addToCart = (productId: number, price: number, quantity: number = 1) => {
         const item = {
             id: productId,
+            price,
             quantity
         }
 
@@ -50,7 +54,6 @@ const ShoppingCartContextProvider: React.FC<IProps> = ({ children }) => {
         for (const idx in productsInCart) {
             const product = productsInCart[idx];
             if (product.id == productId) {
-                console.log('There is a match at index ', idx, 'where product ID is ', product.id);
                 itemIsInCart = true;
                 idxToDelete = parseInt(idx);
                 item.quantity += product.quantity;
@@ -62,14 +65,44 @@ const ShoppingCartContextProvider: React.FC<IProps> = ({ children }) => {
         if (!itemIsInCart) setProductsInCart([...productsInCart, item]);
 
         if (productsInCart.length === 0) setProductsInCart([item]);
+    }
 
-        // setProductsInCart([...productsInCart, item]);
+    const updateQuantityInCart = (productId: number, quantity: number) => {
+        
+        let idxToDelete;
+        for (const idx in productsInCart) {
+            const product = productsInCart[idx];
+            if (product.id == productId) {
+                const item = {
+                    id: productId,
+                    price: product.price,
+                    quantity
+                }
+                idxToDelete = parseInt(idx);
+                productsInCart.splice(idxToDelete, 1);
+                setProductsInCart([...productsInCart, item]);
+            }
+        }
+    }
+
+    const removeItemFromCart = (productId: number) => {
+        let idxToDelete;
+        for (const idx in productsInCart) {
+            const product = productsInCart[idx];
+            if (product.id == productId) {
+                idxToDelete = parseInt(idx);
+                productsInCart.splice(idxToDelete, 1);
+                setProductsInCart([...productsInCart]);
+            }
+        }
     }
 
     return (
         <ShoppingCartContext.Provider value={{
             productsInCart,
-            addToCart
+            addToCart,
+            updateQuantityInCart,
+            removeItemFromCart
         }}>
             {children}
         </ShoppingCartContext.Provider>

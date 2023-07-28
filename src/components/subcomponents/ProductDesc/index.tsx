@@ -48,10 +48,9 @@ const ProductDesc: React.FC<IProps> = ({ product }) => {
 
             /* Query Feature Descriptions */
             const urlFeatures = new URL(FEATURES_API_BASE_URL);
-            let params = new URLSearchParams(urlFeatures.search);
             shoeFeatures.forEach((element: IShoeFeature["shoeFeature"]) => {
                 const featureId = element.feature_id.toString();
-                params.append("id", featureId)
+                urlFeatures.searchParams.append('id', featureId);
             })
             const responseFeatures = await fetch(urlFeatures);
             const features = await responseFeatures.json();

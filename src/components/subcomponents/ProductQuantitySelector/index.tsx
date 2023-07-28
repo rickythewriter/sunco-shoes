@@ -54,7 +54,7 @@ const ProductQuantitySelector: React.FC<IProps> = ({product}) => {
             <div
                 id="add-to-cart-button"
                 onClick={() => {
-                    addToCart(product.id, quantity);
+                    addToCart(product.id, product.price, quantity);
                 }}
             >
                 Add to Cart

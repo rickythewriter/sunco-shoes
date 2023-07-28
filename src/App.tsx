@@ -6,6 +6,7 @@ import Footer from './components/Footer'
 import Home from './components/Home';
 import Product from './components/Product';
 import ShoppingCartContextProvider from './contexts/ShoppingCartContext';
+import Cart from './components/Cart';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
             <Routes>
               <Route path='/' element={<Home />} />
               <Route path='/products/:productId' element={<Product />} />
+              <Route path='/cart' element={<Cart />} />
             </Routes>
           </BrowserRouter>
         </main>
