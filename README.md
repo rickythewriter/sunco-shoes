@@ -43,13 +43,13 @@ A basic e-commerce store with items and a cart, based on this [design](https://w
       npm install
       ```
 
-4. In a terminal, run the mock server.
+4. In a terminal, run the mock server, within the repository directory.
 
    ```bash
    npx json-server -p 4200 --watch db.json 
    ```
 
-5. In a separate terminal, run the React app.
+5. In a separate terminal, run the React app, within the repository directory.
 
    ```bash
    npm start
