@@ -50,8 +50,8 @@ export default function CartSummary() {
     }
 
     const { productsInCart } = useContext(ShoppingCartContext) as ShoppingCartContextType;
-    const [shippingCost, setShippingCost] = useState(20);
     const [subTotal, setSubTotal] = useState(calculateSubTotal());
+    const [shippingCost, setShippingCost] = useState(0);
     const [tax, setTax] = useState(calculateTax(subTotal));
     const [discount, setDiscount] = useState(tax);
     const [total, setTotal] = useState(subTotal + shippingCost + tax - discount);
@@ -59,8 +59,10 @@ export default function CartSummary() {
     useEffect(() => {
         const subTotal = calculateSubTotal();
         const tax = calculateTax(subTotal)
+        const shipping = productsInCart.length > 0 ? 20 : 0;
 
         setSubTotal(subTotal);
+        setShippingCost(shipping);
         setTax(tax);
         setDiscount(tax);
         setTotal(subTotal + shippingCost + tax - discount)
