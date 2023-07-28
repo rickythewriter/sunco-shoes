@@ -2,6 +2,8 @@
 
 A basic e-commerce store with items and a cart, based on this [design](https://www.figma.com/community/file/1265784090042206235).
 
+YouTube Video Demo: [https://youtu.be/OnRkHUSd4uU](https://youtu.be/OnRkHUSd4uU)
+
 ## Technologies Used
 
 - TypeScript
