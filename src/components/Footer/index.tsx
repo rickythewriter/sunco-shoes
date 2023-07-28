@@ -13,9 +13,9 @@ export default function Footer() {
             </div>
             <p id="footer-text">© 2023 dot.cards text task. All rights reserved</p>
             <div id="footer-social">
-                <img id="instagram-icon" className="social-icon" src={instagram} />
-                <img id="twitter-icon" className="social-icon" src={twitter} />
-                <img id="youtube-icon" className="social-icon" src={youtube} />
+                <img alt="social media icon" id="instagram-icon" className="social-icon" src={instagram} />
+                <img alt="social media icon" id="twitter-icon" className="social-icon" src={twitter} />
+                <img alt="social media icon" id="youtube-icon" className="social-icon" src={youtube} />
             </div>
         </footer>
     )

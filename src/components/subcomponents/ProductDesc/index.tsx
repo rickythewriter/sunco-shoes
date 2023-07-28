@@ -85,7 +85,7 @@ const ProductDesc: React.FC<IProps> = ({ product }) => {
                 </ul>
             </div>
             <div id="description-column-right">
-                <img id="description-image" src={imageUrl} />
+                <img alt="description image" id="description-image" src={imageUrl} />
             </div>
         </div>
     )

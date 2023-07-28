@@ -11,7 +11,7 @@ export default function ViewCartButton() {
     return (
         <Link to='/cart'>
             <div id="view-cart">
-                <img id="cart-icon" src={cart} />
+                <img alt="cart icon" id="cart-icon" src={cart} />
                 View Cart
                 { productsInCart.length > 0 && <div id="cart-item-quantity">{productsInCart.length}</div> }
             </div>

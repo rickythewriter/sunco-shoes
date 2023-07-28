@@ -76,7 +76,8 @@ const ProductCarousel: React.FC<IProps> = ({ productId }) => {
             >
                 {productImages.map((image: IImage["image"]) => {
                     return (
-                        <img 
+                        <img
+                            alt="product angle images" 
                             className="carousel-image"
                             src={image.url} 
                         />
@@ -90,7 +91,7 @@ const ProductCarousel: React.FC<IProps> = ({ productId }) => {
                         updateIdx(activeIdx - 1)
                     }}
                 >
-                    <img className={activeIdx > 0 ? "carousel-chevron-active" : "carousel-chevron-inactive"} src={arrowLeft}/>
+                    <img alt="carousel controller buttons" className={activeIdx > 0 ? "carousel-chevron-active" : "carousel-chevron-inactive"} src={arrowLeft}/>
                 </div>
                 <div id="carousel-indicator-container">
                     {productImages.map((image: IImage["image"]) => {
@@ -114,7 +115,7 @@ const ProductCarousel: React.FC<IProps> = ({ productId }) => {
                         updateIdx(activeIdx + 1)
                     }}
                 >
-                    <img className={activeIdx < productImages.length - 1 ? "carousel-chevron-active" : "carousel-chevron-inactive"} src={arrowRight} />
+                    <img alt="carousel controller buttons" className={activeIdx < productImages.length - 1 ? "carousel-chevron-active" : "carousel-chevron-inactive"} src={arrowRight} />
                 </div>
             </div>
 

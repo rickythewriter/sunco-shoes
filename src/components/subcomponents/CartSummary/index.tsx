@@ -114,7 +114,7 @@ export default function CartSummary() {
             </div>
             <div id="checkout-button">
                 Checkout
-                <img className="arrow-right" src={arrowRight} />
+                <img alt="right arrow" className="arrow-right" src={arrowRight} />
             </div>
         </div>
         

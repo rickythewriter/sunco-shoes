@@ -10,7 +10,7 @@ export default function Logo(props: BrightText) {
     return (
         <Link to="/">
             <div id="header-logo">
-                <img id="logo-icon" src={logo} />
+                <img alt="logo" id="logo-icon" src={logo} />
                 <p className={`${props.darkBackground ? "white-text" : ""}`}>SUN CO.</p>
             </div>
         </Link>
