@@ -3,35 +3,11 @@ import arrowRight from '../../../assets/icons/arrow-right.svg'
 import { ShoppingCartContext, ShoppingCartContextType } from '../../../contexts/ShoppingCartContext'
 import './CartSummary.css'
 
-/* Mock Server on Port 4200 */
-const PRODUCTS_API_BASE_URL = 'http://localhost:4200/shoes';
-
-interface IProductData {
-    product: {
-        id: number,
-        brand: string,
-        model: string,
-        price: number,
-        description: string,
-        quantity?: number
-    }[]
-}
-
 interface IProductInCart {
     product: {
         id: number,
         price: number,
         quantity: number
-    }
-}
-
-interface IProduct {
-    product: {
-        id: number,
-        brand: string,
-        model: string,
-        price: number,
-        description: string,
     }
 }
 

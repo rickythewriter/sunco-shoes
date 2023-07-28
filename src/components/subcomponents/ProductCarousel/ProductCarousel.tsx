@@ -43,14 +43,13 @@ const ProductCarousel: React.FC<IProps> = ({ productId }) => {
             images = images.filter((image: IImage["image"]) => {
                 const positionId = image.image_position_id;
                 const isCarouselImage = (
-                    positionId == 1 ||
-                    positionId == 2 ||
-                    positionId == 3
+                    positionId === 1 ||
+                    positionId === 2 ||
+                    positionId === 3
                 )
                 return isCarouselImage;
             })
             setProductImages(images);
-            console.log(images);
         }
 
         fetchData();
@@ -98,9 +97,9 @@ const ProductCarousel: React.FC<IProps> = ({ productId }) => {
                         let carouselIdx;
 
                         /* Determine Carousel Idx based on Image Position ID */
-                        const isFirstIdx = image.image_position_id == 1
-                        const isSecondIdx = image.image_position_id == 2
-                        const isThirdIdx = image.image_position_id == 3
+                        const isFirstIdx = image.image_position_id === 1
+                        const isSecondIdx = image.image_position_id === 2
+                        const isThirdIdx = image.image_position_id === 3
 
                         if (isFirstIdx) carouselIdx = 0;
                         else if (isSecondIdx) carouselIdx = 1;

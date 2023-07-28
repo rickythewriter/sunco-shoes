@@ -36,9 +36,7 @@ const ShoppingCartContextProvider: React.FC<IProps> = ({ children }) => {
 
     /* Persistence - Save Cart Items to Local Storage for Persistence on Page Reloads */
     useEffect(() => {
-        console.log('Products in Cart: ', productsInCart);
         localStorage.setItem("productsInCart", JSON.stringify(productsInCart))
-        console.log('local storage: ', localStorage.getItem("productsInCart"))
     }, [productsInCart])
 
     const addToCart = (productId: number, price: number, quantity: number = 1) => {
@@ -53,7 +51,7 @@ const ShoppingCartContextProvider: React.FC<IProps> = ({ children }) => {
         let idxToDelete;
         for (const idx in productsInCart) {
             const product = productsInCart[idx];
-            if (product.id == productId) {
+            if (product.id === productId) {
                 itemIsInCart = true;
                 idxToDelete = parseInt(idx);
                 item.quantity += product.quantity;
@@ -72,7 +70,7 @@ const ShoppingCartContextProvider: React.FC<IProps> = ({ children }) => {
         let idxToDelete;
         for (const idx in productsInCart) {
             const product = productsInCart[idx];
-            if (product.id == productId) {
+            if (product.id === productId) {
                 const item = {
                     id: productId,
                     price: product.price,
@@ -89,7 +87,7 @@ const ShoppingCartContextProvider: React.FC<IProps> = ({ children }) => {
         let idxToDelete;
         for (const idx in productsInCart) {
             const product = productsInCart[idx];
-            if (product.id == productId) {
+            if (product.id === productId) {
                 idxToDelete = parseInt(idx);
                 productsInCart.splice(idxToDelete, 1);
                 setProductsInCart([...productsInCart]);
