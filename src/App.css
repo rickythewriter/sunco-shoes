@@ -3,6 +3,14 @@
   --footer-height: 123px;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+}
+
 main {
   display: flex;
   flex-direction: column;

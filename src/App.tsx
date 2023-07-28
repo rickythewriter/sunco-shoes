@@ -11,19 +11,19 @@ import Cart from './components/Cart';
 function App() {
   return (
     <div className="App">
-      <ShoppingCartContextProvider>
-        <Header />
-        <main>
-          <BrowserRouter>
-            <Routes>
-              <Route path='/' element={<Home />} />
-              <Route path='/products/:productId' element={<Product />} />
-              <Route path='/cart' element={<Cart />} />
-            </Routes>
-          </BrowserRouter>
-        </main>
-        <Footer />
-      </ShoppingCartContextProvider>
+      <BrowserRouter> 
+        <ShoppingCartContextProvider>
+          <Header />
+          <main>
+              <Routes>
+                <Route path='/' element={<Home />} />
+                <Route path='/products/:productId' element={<Product />} />
+                <Route path='/cart' element={<Cart />} />
+              </Routes>
+          </main>
+          <Footer />
+        </ShoppingCartContextProvider>
+      </BrowserRouter>
     </div>
   );
 }
