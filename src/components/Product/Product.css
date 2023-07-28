@@ -1,0 +1,9 @@
+@media screen and (width >=960px) {
+    #product-row-1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 42px;
+        margin: 0 162px;
+    }
+}

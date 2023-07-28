@@ -74,3 +74,18 @@
     height: 12px;
     width: 12px;
 }
+
+@media screen and (width >=960px) {
+    #product-carousel {
+        width: 49%;
+    }
+
+    .carousel-image {
+        margin: 0;
+        width: 100%;
+    }
+
+    #carousel-controller {
+        margin: 0;
+    }
+}

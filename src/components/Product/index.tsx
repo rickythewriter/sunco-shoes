@@ -11,6 +11,7 @@ import { useParams } from "react-router-dom"
 import ProductCarousel from "../subcomponents/ProductCarousel/ProductCarousel";
 import ProductQuantitySelector from "../subcomponents/ProductQuantitySelector";
 import ProductDesc from "../subcomponents/ProductDesc";
+import './Product.css'
 
 /* Mock Server on Port 4200 */
 const PRODUCTS_API_BASE_URL = 'http://localhost:4200/shoes';
@@ -49,8 +50,10 @@ export default function Product() {
         <>
             {product && (
                 <>
-                    <ProductCarousel productId={product.id.toString()} />
-                    <ProductQuantitySelector product={product} />
+                    <div id="product-row-1">
+                        <ProductCarousel productId={product.id.toString()} />
+                        <ProductQuantitySelector product={product} />
+                    </div>
                     <ProductDesc product={product} />
                 </>
             )}
