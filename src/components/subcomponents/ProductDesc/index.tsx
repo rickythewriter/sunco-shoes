@@ -72,18 +72,22 @@ const ProductDesc: React.FC<IProps> = ({ product }) => {
     }, [])
 
     return (
-        <div id="description-container">
-            <h2 id="description-heading">Description</h2>
-            <div className="horizontal-rule"></div>
-            <p className="product-description">{product.description}</p>
-            <ul className="product-description">
-                {productFeatures.map((feature: IFeature["feature"]) => {
-                    return (
-                        <li>{feature.feature}</li>
-                    )
-                })}
-            </ul>
-            <img id="description-image" src={imageUrl} />
+        <div id="description-container" className="product-row">
+            <div id="description-column-left">
+                <h2 id="description-heading">Description</h2>
+                <div className="horizontal-rule"></div>
+                <p className="product-description">{product.description}</p>
+                <ul className="product-description">
+                    {productFeatures.map((feature: IFeature["feature"]) => {
+                        return (
+                            <li>{feature.feature}</li>
+                        )
+                    })}
+                </ul>
+            </div>
+            <div id="description-column-right">
+                <img id="description-image" src={imageUrl} />
+            </div>
         </div>
     )
 }

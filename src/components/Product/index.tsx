@@ -50,11 +50,13 @@ export default function Product() {
         <>
             {product && (
                 <>
-                    <div id="product-row-1">
+                    <div id="product-row-1" className="product-row">
                         <ProductCarousel productId={product.id.toString()} />
                         <ProductQuantitySelector product={product} />
                     </div>
-                    <ProductDesc product={product} />
+                    <div id="product-row-2" className="product-row">
+                        <ProductDesc product={product}/>
+                    </div>
                 </>
             )}
         </>

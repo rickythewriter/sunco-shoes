@@ -33,7 +33,7 @@ const ProductQuantitySelector: React.FC<IProps> = ({product}) => {
             <h4 id="product-quantity-heading">Quantity</h4>
             <div id="quantity-selector">
                 <div
-                    className="quantity-selector-control"
+                    className="quantity-selector-control chevron"
                     onClick={() => { updateQuantity(quantity - 1) }}
                 >
                     <img className={quantity === 1 ? "minus-inactive" : ""} src={minus} />
@@ -45,7 +45,7 @@ const ProductQuantitySelector: React.FC<IProps> = ({product}) => {
                     {quantity}
                 </p>
                 <div
-                    className="quantity-selector-control"
+                    className="quantity-selector-control chevron"
                     onClick={() => updateQuantity(quantity + 1)}
                 >
                     <img src={plus} />
