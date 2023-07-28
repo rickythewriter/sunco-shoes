@@ -1,6 +1,6 @@
 import CartSummary from "../subcomponents/CartSummary";
 import CartItem from "../subcomponents/CartItem";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { ShoppingCartContext, ShoppingCartContextType } from "../../contexts/ShoppingCartContext";
 import './Cart.css'
 
@@ -21,10 +21,13 @@ export default function Cart() {
             <CartSummary />
             <div id="cart-item-section" className="cart-body">
                 <h2 id="cart-items-heading">Your Bag</h2>
-                {productsInCart.map((product: IProductInCart["product"]) => {
-                    return <CartItem product={product} />
-                })}
-            </div>  
+                {productsInCart
+                    .sort((productA: IProductInCart["product"], productB: IProductInCart["product"]) => productA.id - productB.id)
+                    .map((product: IProductInCart["product"]) => {
+                        return <CartItem product={product} />
+                    })
+                }
+            </div>
         </div>
     )    
 }

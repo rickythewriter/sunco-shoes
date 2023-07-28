@@ -14,8 +14,6 @@ interface IProps {
 
 export type ShoppingCartContextType = {
     productsInCart: IItems["item"],
-    cartHasUpdated: boolean,
-    setCartHasUpdated: React.Dispatch<React.SetStateAction<boolean>>,
     addToCart: (productId: number, price: number, quantity: number) => void,
     updateQuantityInCart: (productId: number, quantity: number) => void,
     removeItemFromCart: (productId: number) => void
@@ -35,7 +33,6 @@ const ShoppingCartContextProvider: React.FC<IProps> = ({ children }) => {
     }
 
     const [productsInCart, setProductsInCart] = useState<IItems["item"]>(storedProducts);
-    const [cartHasUpdated, setCartHasUpdated] = useState(false);
 
     /* Persistence - Save Cart Items to Local Storage for Persistence on Page Reloads */
     useEffect(() => {
@@ -66,8 +63,6 @@ const ShoppingCartContextProvider: React.FC<IProps> = ({ children }) => {
         if (!itemIsInCart) setProductsInCart([...productsInCart, item]);
 
         if (productsInCart.length === 0) setProductsInCart([item]);
-
-        setCartHasUpdated(true);
     }
 
     const updateQuantityInCart = (productId: number, quantity: number) => {
@@ -84,7 +79,6 @@ const ShoppingCartContextProvider: React.FC<IProps> = ({ children }) => {
                 idxToDelete = parseInt(idx);
                 productsInCart.splice(idxToDelete, 1);
                 setProductsInCart([...productsInCart, item]);
-                setCartHasUpdated(true);
             }
         }
     }
@@ -97,7 +91,6 @@ const ShoppingCartContextProvider: React.FC<IProps> = ({ children }) => {
                 idxToDelete = parseInt(idx);
                 productsInCart.splice(idxToDelete, 1);
                 setProductsInCart([...productsInCart]);
-                setCartHasUpdated(true);
             }
         }
     }
@@ -108,8 +101,6 @@ const ShoppingCartContextProvider: React.FC<IProps> = ({ children }) => {
             addToCart,
             updateQuantityInCart,
             removeItemFromCart,
-            cartHasUpdated,
-            setCartHasUpdated
         }}>
             {children}
         </ShoppingCartContext.Provider>

@@ -28,7 +28,7 @@ interface IProductData {
 
 const CartItem: React.FC<IProps> = ({ product }) => {
 
-    const { updateQuantityInCart, removeItemFromCart } = useContext(ShoppingCartContext) as ShoppingCartContextType;
+    const { productsInCart, updateQuantityInCart, removeItemFromCart } = useContext(ShoppingCartContext) as ShoppingCartContextType;
     const [productData, setProductData] = useState<IProductData["product"]>();
     const [imageUrl, setImageUrl] = useState('');
     const [quantity, setQuantity] = useState(product.quantity);
@@ -54,7 +54,7 @@ const CartItem: React.FC<IProps> = ({ product }) => {
         };
 
         fetchData();
-    }, []);
+    }, [productsInCart]);
 
     function updateQuantity(newQuantity: number) {
         if (newQuantity < 1) newQuantity = 1;
@@ -63,9 +63,12 @@ const CartItem: React.FC<IProps> = ({ product }) => {
     }
 
     return (
-        <div className="cart-item">
+        <div 
+            className="cart-item"
+            onClick={() => { if (productData) console.log("Clicked on ", productData.brand) }}
+        >
             <div className="cart-item-column-left">
-                <img className="cart-item-image" src={imageUrl} />
+                <img alt="shoe image" className="cart-item-image" src={imageUrl} />
             </div>
             <div className="cart-item-column-right">
                 {productData &&
@@ -83,7 +86,7 @@ const CartItem: React.FC<IProps> = ({ product }) => {
                             className="quantity-selector-control chevron"
                             onClick={() => { updateQuantity(quantity - 1) }}
                         >
-                            <img className={quantity === 1 ? "minus-inactive" : ""} src={minus} />
+                            <img alt="minus button" className={quantity === 1 ? "minus-inactive" : ""} src={minus} />
                         </div>
                         <p
                             id="product-quantity"
@@ -95,12 +98,16 @@ const CartItem: React.FC<IProps> = ({ product }) => {
                             className="quantity-selector-control chevron"
                             onClick={() => updateQuantity(quantity + 1)}
                         >
-                            <img src={plus} />
+                            <img alt="plus button" src={plus} />
                         </div>
                     </div>
                     <div
                         className="remove-from-cart"
-                        onClick={() => removeItemFromCart(product.id)}
+                        onClick={() => {
+                            removeItemFromCart(product.id);
+                            // console.log(productsInCart);
+                            if (productData) console.log('removed ', productData.brand)
+                        }}
                     >
                         Remove
                     </div>
