@@ -1,0 +1,19 @@
+#description-container {
+    margin: 16px 20px 64px;
+}
+
+#description-heading {
+    line-height: 24px;
+    margin: 0 0 8px;
+}
+
+.product-description {
+    font-weight: normal;
+    font-size: 16px;
+    color: var(--dark-grey);
+}
+
+#description-image {
+    width: 100%;
+    margin-top: 8px;
+}

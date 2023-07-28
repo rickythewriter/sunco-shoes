@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import './ProductDesc.css'
 
 /* Mock Server on Port 4200 */
 const SHOE_FEATURES_API_BASE_URL = 'http://localhost:4200/shoe_features';
@@ -71,18 +72,19 @@ const ProductDesc: React.FC<IProps> = ({ product }) => {
     }, [])
 
     return (
-        <>
-            <h2>Description</h2>
-            <p>{product.description}</p>
-            <ul>
+        <div id="description-container">
+            <h2 id="description-heading">Description</h2>
+            <div className="horizontal-rule"></div>
+            <p className="product-description">{product.description}</p>
+            <ul className="product-description">
                 {productFeatures.map((feature: IFeature["feature"]) => {
                     return (
                         <li>{feature.feature}</li>
                     )
                 })}
             </ul>
-            <img className="" src={imageUrl} />
-        </>
+            <img id="description-image" src={imageUrl} />
+        </div>
     )
 }
 
