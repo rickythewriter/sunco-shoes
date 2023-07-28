@@ -41,7 +41,7 @@ YouTube Video Demo: [https://youtu.be/OnRkHUSd4uU](https://youtu.be/OnRkHUSd4uU)
 
 1. Clone this repository.
       ```bash
-      https://github.com/rickythewriter/sunco-shoes
+      git clone https://github.com/rickythewriter/sunco-shoes
       ```
 
 2. Navigate into the repository.
