@@ -1,0 +1,85 @@
+#product-quantity-selector {
+
+    --horizontal-padding: 27px;
+
+    margin: 24px 20px;
+    padding: 24px var(--horizontal-padding) 18px;
+    background-color: var(--white);
+    border-radius: 15px;
+}
+
+#product-brand {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--black);
+    line-height: 24px;
+    margin-top: 0;
+    margin-bottom: 6px;
+}
+
+#product-model {
+    font-weight: normal;
+    font-size: 15px;
+    color: var(--dark-grey);
+    margin: 13.5px 0;
+}
+
+#product-price {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+    font-weight: medium;
+    color: var(--black);
+    line-height: 18px;
+}
+
+#quantity-selector-border {
+    border: solid 1px var(--line-light-grey);
+    margin: 0 calc(-1 * var(--horizontal-padding));
+}
+
+#product-quantity-heading {
+    margin: 18px 0 12px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: bold;
+    font-size: 13.5px;
+    line-height: 15px;
+}
+
+#quantity-selector {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    border: solid 1px var(--line-light-grey);
+    border-radius: 7.5px;
+    padding: 9px 12px;
+    max-width: 102px;
+}
+
+.quantity-selector-control {
+    height: 18px;
+    width: 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#product-quantity {
+    font-weight: bold;
+    font-size: 13.5px;
+    margin: 0;
+}
+
+#add-to-cart-button {
+    margin: 25px 0 24px;
+    padding: 14px 0;
+    background-color: var(--black);
+    color: var(--white);
+    text-align: center;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 16px;
+}

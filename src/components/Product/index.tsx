@@ -47,11 +47,10 @@ export default function Product() {
 
     return (
         <>
-            <p>{`Param: ${productId}`}</p>
             {product && (
                 <>
-                    <ProductQuantitySelector product={product} />
                     <ProductCarousel productId={product.id.toString()} />
+                    <ProductQuantitySelector product={product} />
                     <ProductDesc product={product} />
                 </>
             )}
