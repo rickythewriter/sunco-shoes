@@ -20,7 +20,7 @@ export default function Cart() {
         <div id="cart-body">
             <CartSummary />
             <div id="cart-item-section" className="cart-body">
-                <h2>Your Bag</h2>
+                <h2 id="cart-items-heading">Your Bag</h2>
                 {productsInCart.map((product: IProductInCart["product"]) => {
                     return <CartItem product={product} />
                 })}

@@ -1,3 +1,10 @@
 .cart-body {
     margin: 0 20px;
 }
+
+#cart-items-heading {
+    margin: 48px 0 24px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+}
