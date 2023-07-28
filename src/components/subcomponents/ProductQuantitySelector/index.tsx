@@ -25,7 +25,7 @@ const ProductQuantitySelector: React.FC<IProps> = ({product}) => {
     }
 
     return (
-        <div id="product-quantity-selector">
+        <div id="product-quantity-selector" className="white-card">
             <h3 id="product-brand">{product.brand}</h3>
             <p id="product-model">{product.model}</p>
             <h3 id="product-price">${product.price}</h3>

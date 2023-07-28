@@ -3,9 +3,6 @@
     --horizontal-padding: 27px;
 
     margin: 24px 20px;
-    padding: 24px var(--horizontal-padding) 18px;
-    background-color: var(--white);
-    border-radius: 15px;
 }
 
 #product-brand {

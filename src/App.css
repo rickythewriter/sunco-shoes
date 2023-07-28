@@ -13,6 +13,13 @@ main {
   border: solid 1px var(--line-light-grey);
 }
 
+.white-card {
+  padding: 0 24px;
+  padding: 24px var(--horizontal-padding) 18px;
+  background-color: var(--white);
+  border-radius: 15px;
+}
+
 @media screen and (width >=960px) {
   .App {
     --footer-height: 72px;
