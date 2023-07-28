@@ -3,6 +3,7 @@ body {
   font-family: 'Inter', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--bg);
 }
 
 code {
@@ -19,4 +20,5 @@ code {
   --orange: #EC5E2A;
   --white: #FFF;
   --hero-bg: #EAEEEF;
+  --bg: rgb(252, 252, 252);
 }
