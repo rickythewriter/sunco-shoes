@@ -15,20 +15,27 @@ YouTube Video Demo: [https://youtu.be/OnRkHUSd4uU](https://youtu.be/OnRkHUSd4uU)
 ## Features
 
 ### Home Page
-- Header
-- List of four products
+
+#### Header
+![Header](https://github.com/rickythewriter/sunco-shoes/blob/master/docs/screens/home-header.png?raw=true)
+
+#### List of Four Items
+![List](https://github.com/rickythewriter/sunco-shoes/blob/master/docs/screens/home-list.png?raw=true)
 
 ### Product Page
+![Product Page](https://github.com/rickythewriter/sunco-shoes/blob/master/docs/screens/product.png?raw=true)
 - Information
 - Image Carousel
 - Quantity Selector
 - Add Items
 
 ### View Cart
+![View Cart](https://github.com/rickythewriter/sunco-shoes/blob/master/docs/screens/view-cart.png?raw=true)
 - Summary of Charges
 - Thumbnail and Quantity
 
 ### Responsive Design
+![Responsive](https://github.com/rickythewriter/sunco-shoes/blob/master/docs/screens/responsive.png?raw=true)
 
 ## Installation
 
