@@ -1,14 +1,6 @@
 # Sun Co - dot. Cards Technical Assessment - Ricky Thang
 
-A basic e-commerce store with items and a cart, based on this [design](https://www.figma.com/community/file/1265784090042206235)
-
-## What is Prosopeople?
-
-Prosopeople is a digital auto-prosoporaphy, a technology for managing your relationships, through record-keeping, inspired by the user interface of [Evernote.com](https://evernote.com/). You can:
-- create dossiers of people, with whom you want to build a deeper relationship,
-- add tags, to see your friends' traits, and who has what in common,
-- write entries about them, so you don't forget what you've done together, what they like, how you feel about them.
-- entries now have a gallery reel, where you can add and view images.
+A basic e-commerce store with items and a cart, based on this [design](https://www.figma.com/community/file/1265784090042206235).
 
 ## Technologies Used
 
