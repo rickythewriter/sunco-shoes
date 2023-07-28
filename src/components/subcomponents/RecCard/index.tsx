@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import './RecCard.css'
-
+import { Link } from "react-router-dom";
 const PRODUCT_IMAGES_API_BASE_URL = 'http://localhost:4200/images';
 
 interface IProps {
@@ -34,13 +34,14 @@ const RecCard: React.FC<IProps> = ({product}) => {
     }, [])
 
     return (
-        <div id="reccard">
-            <img className="reccard reccard-img" src={imageUrl}/>
-            <h3 className="reccard reccard-brand">{product.brand}</h3>
-            <p className="reccard reccard-model">{product.model}</p>
-            <h3 className="reccard reccard-price">{`$${product.price}`}</h3>
-        </div>
-        
+        <Link to={`/products/${product.id}`}>
+            <div id="reccard">
+                <img className="reccard reccard-img" src={imageUrl}/>
+                <h3 className="reccard reccard-brand">{product.brand}</h3>
+                <p className="reccard reccard-model">{product.model}</p>
+                <h3 className="reccard reccard-price">{`$${product.price}`}</h3>
+            </div>
+        </Link>
     )
 }
 
