@@ -1,7 +1,55 @@
+#cart-summary {
+    margin-top: 18px;
+    padding: 31px 24px;
+}
+
+#cart-summary-heading {
+    margin: 0 0 25px;
+    font-family: 'DM Sans', sans-serif;
+    line-height: 36px;
+}
+
 .summary-row {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    line-height: 18px;
+    font-family: 'DM Sans', sans-serif;
+    margin: 0 0 16px;
+}
+
+.summary-row p {
+    margin: 0;
+}
+
+.charge-name {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.charge-amount {
+    font-size: 14px;
+}
+
+.orange {
+    color: var(--orange);
+}
+
+#cart-summary .horizontal-rule {
+    margin: 20px 0; 
+}
+
+.total-row {
+    line-height: 24px;
+    margin-bottom: 32px;
+}
+
+#total-cost-heading {
+    font-size: 18px;
+}
+
+#total-cost-amount {
+    font-size: 15px;
 }
 
 #checkout-button {
@@ -14,7 +62,6 @@
     font-weight: bold;
     border-radius: 10px;
     padding: 12px 80px;
-    margin: 0 20px 40px;
     gap: 10px;
 }
 

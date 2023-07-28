@@ -69,8 +69,8 @@ export default function CartSummary() {
     }, [productsInCart])
 
     return (
-        <div className="white-card">
-            <h2>Summary</h2>
+        <div id="cart-summary" className="white-card cart-body">
+            <h2 id="cart-summary-heading">Summary</h2>
             <div className="summary-row">
                 <div className="charge-name">
                     <p>Subtotal</p>
@@ -99,16 +99,16 @@ export default function CartSummary() {
                 <div className="charge-name">
                     <p>Discount</p>
                 </div>
-                <div className="charge-amount">
+                <div className="charge-amount orange">
                     <p>-${discount.toFixed(2)}</p>
                 </div>
             </div>
             <div className="horizontal-rule"/>
-            <div className="summary-row">
-                <div className="charge-name">
+            <div className="summary-row total-row">
+                <div id="total-cost-heading" className="charge-name">
                     <p>Total</p>
                 </div>
-                <div className="charge-amount">
+                <div id="total-cost-amount"className="charge-amount">
                     <p>{total.toFixed(2)}</p>
                 </div>
             </div>

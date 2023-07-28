@@ -2,6 +2,7 @@ import { useState, useEffect, useContext } from "react"
 import minus from '../../../assets/icons/minus.svg'
 import plus from '../../../assets/icons/plus.svg'
 import { ShoppingCartContext, ShoppingCartContextType } from "../../../contexts/ShoppingCartContext";
+import './CartItem.css'
 
 /* Mock Server on Port 4200 */
 const PRODUCTS_API_BASE_URL = 'http://localhost:4200/shoes';
@@ -63,7 +64,7 @@ const CartItem: React.FC<IProps> = ({ product }) => {
 
     return (
         <>
-            <img className="" src={imageUrl} />
+            <img id="cart-item-image" src={imageUrl} />
             {productData &&
                 <>
                     <p>{productData.brand}</p>
