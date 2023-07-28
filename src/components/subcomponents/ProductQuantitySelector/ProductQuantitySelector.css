@@ -34,7 +34,6 @@
 }
 
 #quantity-selector-border {
-    border: solid 1px var(--line-light-grey);
     margin: 0 calc(-1 * var(--horizontal-padding));
 }
 

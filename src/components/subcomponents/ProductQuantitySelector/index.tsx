@@ -29,7 +29,7 @@ const ProductQuantitySelector: React.FC<IProps> = ({product}) => {
             <h3 id="product-brand">{product.brand}</h3>
             <p id="product-model">{product.model}</p>
             <h3 id="product-price">${product.price}</h3>
-            <div id="quantity-selector-border"></div>
+            <div id="quantity-selector-border" className="horizontal-rule"></div>
             <h4 id="product-quantity-heading">Quantity</h4>
             <div id="quantity-selector">
                 <div

@@ -9,6 +9,10 @@ main {
   min-height: calc(100vh - var(--header-height) - var(--footer-height));
 }
 
+.horizontal-rule {
+  border: solid 1px var(--line-light-grey);
+}
+
 @media screen and (width >=960px) {
   .App {
     --footer-height: 72px;
