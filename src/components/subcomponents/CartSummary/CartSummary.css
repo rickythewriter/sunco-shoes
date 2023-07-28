@@ -71,6 +71,12 @@
 
 @media screen and (width >=960px) {
 
+    #cart-summary {
+        width: 41%;
+        padding-top: 36px;
+        margin-bottom: 64px;
+    }
+
     #checkout-button {
         align-self: left;
         margin-left: 0;
@@ -78,5 +84,48 @@
         padding: 20px 80px;
         align-self: flex-start;
         margin: 0;
+    }
+
+    #cart-summary-heading {
+        line-height: 48px;
+        font-size: 36px;
+        margin-bottom: 32px;
+    }
+
+    .summary-row {
+        line-height: 24px;
+        margin-bottom: 20px;
+    }
+
+    .charge-name {
+        font-size: 20px;
+    }
+
+    .charge-amount {
+        font-size: 18px;
+    }
+
+    #cart-summary > .horizontal-rule {
+        margin: 32px 0;
+    }
+
+    .total-row {
+        margin-bottom: 40px;
+    }
+
+    #total-cost-heading {
+        font-size: 24px;
+        line-height: 32px;;
+    }
+
+    #total-cost-amount {
+        font-size: 18px;
+    }
+
+    #checkout-button {
+        box-sizing: border-box;
+        height: 64px;
+        font-size: 18px;
+        margin-bottom: 36px;
     }
 }

@@ -8,3 +8,26 @@
     font-weight: bold;
     font-size: 28px;
 }
+
+@media screen and (width >=960px) {
+    .cart-body {
+        margin: 0;
+    }
+
+    #cart-body {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        margin: 0 162px;
+    }
+
+    #cart-item-section {
+        width: 52%;
+    }
+
+    #cart-items-heading {
+        margin: 32px 0 28px;
+        line-height: 48px;
+        font-size: 36px;
+    }
+}

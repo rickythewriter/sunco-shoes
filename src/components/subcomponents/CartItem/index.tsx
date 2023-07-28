@@ -65,43 +65,45 @@ const CartItem: React.FC<IProps> = ({ product }) => {
     return (
         <div className="cart-item">
             <div className="cart-item-column-left">
-                <img id="cart-item-image" src={imageUrl} />
+                <img className="cart-item-image" src={imageUrl} />
             </div>
             <div className="cart-item-column-right">
                 {productData &&
                     <>
                         <div className="cart-item-brand-row">
-                            <p id="cart-item-brand">{productData.brand}</p>
-                            <p id="cart-item-price">${productData.price}</p>
+                            <p className="cart-item-brand">{productData.brand}</p>
+                            <p className="cart-item-price">${productData.price}</p>
                         </div>
-                        <p id="cart-item-model">{productData.model}</p>
+                        <p className="cart-item-model">{productData.model}</p>
                     </>
                 }
-                <div id="quantity-selector">
-                    <div
-                        className="quantity-selector-control chevron"
-                        onClick={() => { updateQuantity(quantity - 1) }}
-                    >
-                        <img className={quantity === 1 ? "minus-inactive" : ""} src={minus} />
+                <div className="cart-item-selector-row">
+                    <div id="quantity-selector">
+                        <div
+                            className="quantity-selector-control chevron"
+                            onClick={() => { updateQuantity(quantity - 1) }}
+                        >
+                            <img className={quantity === 1 ? "minus-inactive" : ""} src={minus} />
+                        </div>
+                        <p
+                            id="product-quantity"
+                            className="quantity-selector-control"
+                        >
+                            {quantity}
+                        </p>
+                        <div
+                            className="quantity-selector-control chevron"
+                            onClick={() => updateQuantity(quantity + 1)}
+                        >
+                            <img src={plus} />
+                        </div>
                     </div>
-                    <p
-                        id="product-quantity"
-                        className="quantity-selector-control"
-                    >
-                        {quantity}
-                    </p>
                     <div
-                        className="quantity-selector-control chevron"
-                        onClick={() => updateQuantity(quantity + 1)}
+                        className="remove-from-cart"
+                        onClick={() => removeItemFromCart(product.id)}
                     >
-                        <img src={plus} />
+                        Remove
                     </div>
-                </div>
-                <div
-                    className="remove-from-cart"
-                    onClick={() => removeItemFromCart(product.id)}
-                >
-                    Remove
                 </div>
             </div>
         </div>
