@@ -1,46 +1,78 @@
-# Getting Started with Create React App
+# Sun Co - dot. Cards Technical Assessment - Ricky Thang
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A basic e-commerce store with items and a cart, based on this [design](https://www.figma.com/community/file/1265784090042206235)
 
-## Available Scripts
+## What is Prosopeople?
 
-In the project directory, you can run:
+Prosopeople is a digital auto-prosoporaphy, a technology for managing your relationships, through record-keeping, inspired by the user interface of [Evernote.com](https://evernote.com/). You can:
+- create dossiers of people, with whom you want to build a deeper relationship,
+- add tags, to see your friends' traits, and who has what in common,
+- write entries about them, so you don't forget what you've done together, what they like, how you feel about them.
+- entries now have a gallery reel, where you can add and view images.
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- TypeScript
+- React
+- json-server
+- CSS
+- git
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Features
 
-### `npm test`
+### Home Page
+- Header
+- List of four products
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Product Page
+- Information
+- Image Carousel
+- Quantity Selector
+- Add Items
 
-### `npm run build`
+### View Cart
+- Summary of Charges
+- Thumbnail and Quantity
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Responsive Design
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Installation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Clone this repository.
+      ```bash
+      https://github.com/rickythewriter/sunco-shoes
+      ```
 
-### `npm run eject`
+2. Navigate into the repository.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+3. Install dependencies.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+      ```bash
+      npm install
+      ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+4. In a terminal, run the mock server.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+   ```bash
+   npx json-server -p 4200 --watch db.json 
+   ```
 
-## Learn More
+5. In a separate terminal, run the React app.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   ```bash
+   npm start
+   ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Wiki Docs
+
+Includes database schema, and front-end routes.
+
+https://github.com/rickythewriter/sunco-shoes/wiki
+
+## Creator - Ricky Thang
+
+- [GitHub](https://github.com/rickythewriter)
+- [Portfolio](rickythang.com)
+- [LinkedIn](https://www.linkedin.com/in/ricky-thang-88307a100)
+
+
