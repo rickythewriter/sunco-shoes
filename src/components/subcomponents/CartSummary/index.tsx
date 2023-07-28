@@ -25,7 +25,7 @@ export default function CartSummary() {
         return Number((subTotal * taxRate).toFixed(2))
     }
 
-    const { productsInCart } = useContext(ShoppingCartContext) as ShoppingCartContextType;
+    const { productsInCart, cartHasUpdated, setCartHasUpdated } = useContext(ShoppingCartContext) as ShoppingCartContextType;
     const [subTotal, setSubTotal] = useState(calculateSubTotal());
     const [shippingCost, setShippingCost] = useState(0);
     const [tax, setTax] = useState(calculateTax(subTotal));
@@ -42,7 +42,9 @@ export default function CartSummary() {
         setTax(tax);
         setDiscount(tax);
         setTotal(subTotal + shippingCost + tax - discount)
-    }, [productsInCart])
+
+        setCartHasUpdated(false);
+    }, [cartHasUpdated])
 
     return (
         <div id="cart-summary" className="white-card cart-body">
