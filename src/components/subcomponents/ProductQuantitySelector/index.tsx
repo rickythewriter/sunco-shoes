@@ -1,6 +1,7 @@
-import { useState } from "react"
+import { useState, useContext, useEffect } from "react"
 import minus from '../../../assets/icons/minus.svg'
 import plus from '../../../assets/icons/plus.svg'
+import { ShoppingCartContextType, ShoppingCartContext } from "../../../contexts/ShoppingCartContext"
 
 interface IProps {
     product: {
@@ -15,6 +16,7 @@ interface IProps {
 const ProductQuantitySelector: React.FC<IProps> = ({product}) => {
 
     const [quantity, setQuantity] = useState(1);
+    const { addToCart } = useContext(ShoppingCartContext) as ShoppingCartContextType;
 
     return (
         <>
@@ -36,6 +38,13 @@ const ProductQuantitySelector: React.FC<IProps> = ({product}) => {
                 onClick={() => setQuantity(quantity + 1)}
             >
                 <img src={plus} />
+            </div>
+            <div
+                onClick={() => {
+                    addToCart(product.id, quantity);
+                }}
+            >
+                Add to Cart
             </div>
         </>
     )
