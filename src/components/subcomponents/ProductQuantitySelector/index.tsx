@@ -19,6 +19,11 @@ const ProductQuantitySelector: React.FC<IProps> = ({product}) => {
     const [quantity, setQuantity] = useState(1);
     const { addToCart } = useContext(ShoppingCartContext) as ShoppingCartContextType;
 
+    function updateQuantity(newQuantity: number) {
+        if (newQuantity < 1) newQuantity = 1;
+        setQuantity(newQuantity);
+    }
+
     return (
         <div id="product-quantity-selector">
             <h3 id="product-brand">{product.brand}</h3>
@@ -29,13 +34,9 @@ const ProductQuantitySelector: React.FC<IProps> = ({product}) => {
             <div id="quantity-selector">
                 <div
                     className="quantity-selector-control"
-                    onClick={() => {
-                        if (quantity > 1) {
-                            setQuantity(quantity - 1)
-                        }
-                    }}
+                    onClick={() => { updateQuantity(quantity - 1) }}
                 >
-                    <img src={minus} />
+                    <img className={quantity === 1 ? "minus-inactive" : ""} src={minus} />
                 </div>
                 <p 
                     id="product-quantity" 
@@ -45,7 +46,7 @@ const ProductQuantitySelector: React.FC<IProps> = ({product}) => {
                 </p>
                 <div
                     className="quantity-selector-control"
-                    onClick={() => setQuantity(quantity + 1)}
+                    onClick={() => updateQuantity(quantity + 1)}
                 >
                     <img src={plus} />
                 </div>

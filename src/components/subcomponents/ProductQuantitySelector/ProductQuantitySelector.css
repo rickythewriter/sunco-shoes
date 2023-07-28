@@ -67,6 +67,10 @@
     align-items: center;
 }
 
+.minus-inactive {
+    opacity: 0.2;
+}
+
 #product-quantity {
     font-weight: bold;
     font-size: 13.5px;
