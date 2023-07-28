@@ -84,7 +84,7 @@ export default function CartSummary() {
                     <p>Shipping and delivery</p>
                 </div>
                 <div className="charge-amount">
-                    <p>{shippingCost.toFixed(2)}</p>
+                    <p>${shippingCost.toFixed(2)}</p>
                 </div>
             </div>
             <div className="summary-row">
