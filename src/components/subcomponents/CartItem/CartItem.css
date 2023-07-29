@@ -8,10 +8,6 @@
     margin-bottom: 24px;
 }
 
-.cart-item:last-child {
-    margin-bottom: 64px;
-}
-
 .cart-item-image {
     height: 141px;
     width: 140px;
