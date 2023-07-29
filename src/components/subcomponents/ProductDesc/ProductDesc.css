@@ -20,19 +20,16 @@
 
 @media screen and (width >=960px) {
     #description-container {
-        display: flex;
-        flex-direction: row;
         align-items: center;
-        gap: 42px;
-        margin: 16px 0 64px;
+        margin: 16px 162px 64px;
     }
 
     #description-column-left {
-        width: 49%;
+        grid-area: description;
     }
 
     #description-column-right {
-        width: 43%;
+        grid-area: description-image;
     }
 
     .product-description {
