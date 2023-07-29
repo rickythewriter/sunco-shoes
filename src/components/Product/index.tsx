@@ -54,9 +54,7 @@ export default function Product() {
                         <ProductCarousel productId={product.id.toString()} />
                         <ProductQuantitySelector product={product} />
                     </div>
-                    <div id="product-row-2" className="product-row">
-                        <ProductDesc product={product}/>
-                    </div>
+                    <ProductDesc product={product}/>
                 </>
             )}
         </>

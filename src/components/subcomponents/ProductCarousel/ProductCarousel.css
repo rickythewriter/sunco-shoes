@@ -77,7 +77,8 @@
 
 @media screen and (width >=960px) {
     #product-carousel {
-        width: 49%;
+        grid-area: carousel;
+        /* width: 49%; */
     }
 
     .carousel-image {
