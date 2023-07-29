@@ -1,5 +1,5 @@
 #description-container {
-    margin: 16px 20px 64px;
+    margin: 16px 20px 0;
 }
 
 #description-heading {
@@ -21,7 +21,7 @@
 @media screen and (width >=960px) {
     #description-container {
         align-items: center;
-        margin: 16px 162px 64px;
+        margin: 16px 162px 0;
     }
 
     #description-column-left {
