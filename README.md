@@ -79,6 +79,10 @@ https://github.com/rickythewriter/sunco-shoes/wiki
 
 ## Compromises
 
+### Omission of Mobile Home Page Horizontal Scroll Buttons
+
+Although this was on the wireframe, I had determined that the trade-off of building a special component to scroll, when swiping is both instinctive and simpler to implement, was not worth my time investment.
+
 ### Lengthy Fetch Hooks on Mount
 
 Due to the time constraint, and the use of a mock server in place of a back-end framework, I could not query relational data idiomatically, such as with an ORM, and had also decided against using Redux to manage API calls. Instead, I fetched the necessary data within the relevant components' useEffect hooks.
