@@ -204,15 +204,47 @@ describe('cart', () => {
     total.should('contain', '$2505.00');
   })
 
-  // it('reflects correct total cost after removing first item in list', () => {
-  //   // remove item 1
-  //   /* check that
-  //       subtotal is (priceProduct3*1) && // $160
-  //       shipping is $20 && 
-  //       tax is (subtotal*taxRate) && //$11.60
-  //       discount is (tax) && 
-  //       total is (subtotal + shipping + tax - discount) // $180
-  //   */
-  // })
+  it('reflects correct total cost after removing first item in list', () => {
+    // add three of product 1
+    cy.visit(`${BASE_URL}/products/1`);
+    let incrementButton = cy.get('.quantity-selector-control:last-child');
+    incrementButton.click() // 2
+    incrementButton.click() // 3
+    let addToCartButton = cy.get('#add-to-cart-button');
+    addToCartButton.click();
+
+    // add two of product 2
+    cy.visit(`${BASE_URL}/products/2`);
+    incrementButton = cy.get('.quantity-selector-control:last-child');
+    incrementButton.click() // 2
+    addToCartButton = cy.get('#add-to-cart-button');
+    addToCartButton.click();
+
+    // add one of product 3
+    cy.visit(`${BASE_URL}/products/3`);
+    addToCartButton = cy.get('#add-to-cart-button');
+    addToCartButton.click();
+
+    // remove product 1
+    cy.visit(`${BASE_URL}/cart`);
+    const removeButton = cy.get('.cart-item:nth-child(2)').contains('Remove');
+    removeButton.click();
+
+    // check that charges are correct
+    const subtotal = cy.get('.summary-row:first');
+    subtotal.should('contain', '$560.00'); // 200*2 + 160
+
+    const shipping = cy.get('.summary-row').contains('.summary-row', 'Shipping');
+    shipping.should('contain', '$20.00');
+
+    const tax = cy.get('.summary-row').contains('.summary-row', 'Tax');
+    tax.should('contain', '$40.60');
+
+    const discount = cy.get('.summary-row').contains('.summary-row', 'Discount');
+    discount.should('contain', '$40.60');;
+
+    const total = cy.get('#cart-summary > div:nth-child(7)');
+    total.should('contain', '$580.00');
+  })
 
 })
