@@ -118,12 +118,12 @@ describe('cart', () => {
   it('reflects correct costs after adding more than one kind of item', () => {
     // add one of product 2
     cy.visit(`${BASE_URL}/products/2`);
-    const addToCartButton = cy.get('#add-to-cart-button');
+    let addToCartButton = cy.get('#add-to-cart-button');
     addToCartButton.click();
 
     // add one of product 3
     cy.visit(`${BASE_URL}/products/3`);
-    const addToCartButton = cy.get('#add-to-cart-button');
+    addToCartButton = cy.get('#add-to-cart-button');
     addToCartButton.click();
 
     // check that charges are correct
@@ -144,5 +144,22 @@ describe('cart', () => {
     const total = cy.get('#cart-summary > div:nth-child(7)');
     total.should('contain', '$380.00');
   })
+
+  it('cannot remove an item by decrementing the quantity', () => {
+    // add one of product 2
+    cy.visit(`${BASE_URL}/products/2`);
+    const addToCartButton = cy.get('#add-to-cart-button');
+    addToCartButton.click();
+
+    // decrement product 2 (from 1 to 1) in cart
+    cy.visit(`${BASE_URL}/cart`);
+    const decrementButton = cy.get('.quantity-selector-control:first-child');
+    decrementButton.click()
+
+    // check that there are two of product 2
+    const quantity = cy.get('#product-quantity')
+    quantity.should('contain', '1');
+  })
+
 
 })
