@@ -87,8 +87,8 @@
     #home-promo #discount {
         font-size: 48px;
         align-self: flex-start;
-        margin-top: 0;
         line-height: 56px;
+        margin: 64px 0 8px;
     }
 
     #home-promo #title {
@@ -102,15 +102,14 @@
         font-size: 20px;
         line-height: 30px;
         align-self: flex-start;
-        margin: 40px 0 48px;
+        margin: 20px 0 48px;
     }
 
     #home-promo #shop-now-button {
         align-self: left;
-        margin-left: 0;
         font-size: 18px;
         padding: 20px 80px;
         align-self: flex-start;
-        margin: 0;
+        margin: 0 0 64px 0;
     }
 }
