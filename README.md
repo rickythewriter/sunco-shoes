@@ -10,6 +10,7 @@ YouTube Video Demo: [https://youtu.be/OnRkHUSd4uU](https://youtu.be/OnRkHUSd4uU)
 - React
 - json-server
 - CSS
+- Cypress
 - git
 
 ## Features
