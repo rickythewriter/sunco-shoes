@@ -77,6 +77,16 @@ Includes database schema, and front-end routes.
 
 https://github.com/rickythewriter/sunco-shoes/wiki
 
+## Compromises
+
+### Lengthy Fetch Hooks on Mount
+
+Due to the time constraint, and the use of a mock server in place of a back-end framework, I could not query relational data idiomatically, such as with an ORM, and had also decided against using Redux to manage API calls. Instead, I fetched the necessary data within the relevant components' useEffect hooks.
+
+### Slow Load Times for Images
+
+Instead of using a faster blog storage solution, I'd opted to host the dummy images on a GitHub repository.
+
 ## Creator - Ricky Thang
 
 - [GitHub](https://github.com/rickythewriter)
