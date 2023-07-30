@@ -61,8 +61,6 @@ const ShoppingCartContextProvider: React.FC<IProps> = ({ children }) => {
         }
 
         if (!itemIsInCart) setProductsInCart([...productsInCart, item]);
-
-        if (productsInCart.length === 0) setProductsInCart([item]);
     }
 
     const updateQuantityInCart = (productId: number, quantity: number) => {
