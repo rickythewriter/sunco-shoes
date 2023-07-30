@@ -115,4 +115,34 @@ describe('cart', () => {
       total.should('contain', '$220.00');
   })
 
+  it('reflects correct costs after adding more than one kind of item', () => {
+    // add one of product 2
+    cy.visit(`${BASE_URL}/products/2`);
+    const addToCartButton = cy.get('#add-to-cart-button');
+    addToCartButton.click();
+
+    // add one of product 3
+    cy.visit(`${BASE_URL}/products/3`);
+    const addToCartButton = cy.get('#add-to-cart-button');
+    addToCartButton.click();
+
+    // check that charges are correct
+    cy.visit(`${BASE_URL}/cart`);
+
+    const subtotal = cy.get('.summary-row:first');
+    subtotal.should('contain', '$360.00');
+
+    const shipping = cy.get('.summary-row').contains('.summary-row', 'Shipping');
+    shipping.should('contain', '$20.00');
+
+    const tax = cy.get('.summary-row').contains('.summary-row', 'Tax');
+    tax.should('contain', '$26.10');
+
+    const discount = cy.get('.summary-row').contains('.summary-row', 'Discount');
+    discount.should('contain', '$26.10');;
+
+    const total = cy.get('#cart-summary > div:nth-child(7)');
+    total.should('contain', '$380.00');
+  })
+
 })
