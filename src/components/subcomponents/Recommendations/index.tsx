@@ -39,7 +39,7 @@ export default function Recommendations() {
                 {
                     recommendations.map(recommendation => {
                         return (
-                            <RecCard product={recommendation} />
+                            <RecCard key={recommendation.id} product={recommendation} />
                         )
                     })
                 }
