@@ -64,6 +64,12 @@ YouTube Video Demo: [https://youtu.be/OnRkHUSd4uU](https://youtu.be/OnRkHUSd4uU)
    npm start
    ```
 
+## Bonus: Testing
+
+![Integration Tests](https://github.com/rickythewriter/sunco-shoes/blob/master/docs/screens/tests.png?raw=true)
+
+Use command `npx cypress open` to run test suite.
+
 ## Wiki Docs
 
 Includes database schema, and front-end routes.
