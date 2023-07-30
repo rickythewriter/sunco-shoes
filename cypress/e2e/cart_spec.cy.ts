@@ -78,4 +78,41 @@ describe('cart', () => {
     total.should('contain', '$420.00');
   })
 
+  it('reflects correct costs after decrementing quantity', () => {
+      // add one of product 2
+      cy.visit(`${BASE_URL}/products/2`);
+      const addToCartButton = cy.get('#add-to-cart-button');
+      addToCartButton.click();
+
+      // increment product 2 (changes to 2) in cart
+      cy.visit(`${BASE_URL}/cart`);
+      const incrementButton = cy.get('.quantity-selector-control:last-child');
+      incrementButton.click()
+
+      // decrement product 2 (changes to 1) in cart
+      cy.visit(`${BASE_URL}/cart`);
+      const decrementButton = cy.get('.quantity-selector-control:first-child');
+      decrementButton.click()
+
+      // check that there are two of product 2
+      const quantity = cy.get('#product-quantity')
+      quantity.should('contain', '1');
+
+      // check that charges are correct
+      const subtotal = cy.get('.summary-row:first');
+      subtotal.should('contain', '$200.00');
+
+      const shipping = cy.get('.summary-row').contains('.summary-row', 'Shipping');
+      shipping.should('contain', '$20.00');
+
+      const tax = cy.get('.summary-row').contains('.summary-row', 'Tax');
+      tax.should('contain', '$14.50');
+
+      const discount = cy.get('.summary-row').contains('.summary-row', 'Discount');
+      discount.should('contain', '$14.50');;
+
+      const total = cy.get('#cart-summary > div:nth-child(7)');
+      total.should('contain', '$220.00');
+  })
+
 })
