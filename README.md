@@ -65,7 +65,7 @@ YouTube Video Demo: [https://youtu.be/OnRkHUSd4uU](https://youtu.be/OnRkHUSd4uU)
    npm start
    ```
 
-## Bonus: Testing
+## Bonus: Automated Testing of Important Business Logic
 
 ![Integration Tests](https://github.com/rickythewriter/sunco-shoes/blob/master/docs/screens/tests.png?raw=true)
 
