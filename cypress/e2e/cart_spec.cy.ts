@@ -45,7 +45,7 @@ describe('cart', () => {
     
   })
 
-  it('reflects correct costs after incrementing quality', () => {
+  it('reflects correct costs after incrementing quantity', () => {
     
     // add one of product 2
     cy.visit(`${BASE_URL}/products/2`);
