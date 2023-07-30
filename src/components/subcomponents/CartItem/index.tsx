@@ -1,4 +1,5 @@
 import { useState, useEffect, useContext } from "react"
+import { Link } from "react-router-dom";
 import minus from '../../../assets/icons/minus.svg'
 import plus from '../../../assets/icons/plus.svg'
 import { ShoppingCartContext, ShoppingCartContextType } from "../../../contexts/ShoppingCartContext";
@@ -74,7 +75,7 @@ const CartItem: React.FC<IProps> = ({ product }) => {
                 {productData &&
                     <>
                         <div className="cart-item-brand-row">
-                            <p className="cart-item-brand">{productData.brand}</p>
+                        <p className="cart-item-brand"><Link to={`/products/${product.id}`}>{productData.brand}</Link></p>
                             <p className="cart-item-price">${productData.price}</p>
                         </div>
                         <p className="cart-item-model">{productData.model}</p>
