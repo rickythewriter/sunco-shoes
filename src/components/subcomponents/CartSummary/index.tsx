@@ -89,7 +89,7 @@ export default function CartSummary() {
                     <p>Total</p>
                 </div>
                 <div id="total-cost-amount"className="charge-amount">
-                    <p>{total.toFixed(2)}</p>
+                    <p>${total.toFixed(2)}</p>
                 </div>
             </div>
             <div id="checkout-button">
