@@ -24,7 +24,7 @@ export default function Cart() {
                 {productsInCart
                     .sort((productA: IProductInCart["product"], productB: IProductInCart["product"]) => productA.id - productB.id)
                     .map((product: IProductInCart["product"]) => {
-                        return <CartItem product={product} />
+                        return <CartItem key={product.id} product={product} />
                     })
                 }
             </div>
