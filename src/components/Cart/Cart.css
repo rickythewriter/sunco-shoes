@@ -19,6 +19,7 @@
         flex-direction: row-reverse;
         justify-content: space-between;
         margin: 0 162px;
+        gap: 5vw;
     }
 
     #cart-item-section {
