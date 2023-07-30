@@ -89,7 +89,7 @@ Due to the time constraint, and the use of a mock server in place of a back-end 
 
 ### Slow Load Times for Images
 
-Instead of using a faster blog storage solution, I'd opted to host the dummy images on a GitHub repository.
+Since this is only a sample project, I hosted the dummy images on a GitHub repository, instead of using a faster blob storage solution.
 
 ## Creator - Ricky Thang
 
