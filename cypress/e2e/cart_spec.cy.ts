@@ -20,7 +20,7 @@ describe('cart', () => {
     itemCost.should('contain', '$200.00');
   })
 
-  it('increments existing quantity after adding item already-in-cart', () => {
+  it('increments existing quantity after adding item already-in-cart from product page', () => {
     // go to product 1
     const pathProduct1 = '/products/1'
     cy.visit(`${BASE_URL}/products/1`);
