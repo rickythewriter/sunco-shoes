@@ -8,9 +8,9 @@
 
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom"
-import ProductCarousel from "../subcomponents/ProductCarousel/ProductCarousel";
-import ProductQuantitySelector from "../subcomponents/ProductQuantitySelector";
-import ProductDesc from "../subcomponents/ProductDesc";
+import ProductCarousel from "../../components/ProductCarousel";
+import ProductQuantitySelector from "../../components/ProductQuantitySelector";
+import ProductDesc from "../../components/ProductDesc";
 import './Product.css'
 
 /* Mock Server on Port 4200 */

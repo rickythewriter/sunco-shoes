@@ -1,6 +1,6 @@
 import "./Logo.css"
 import { Link } from "react-router-dom"
-import logo from '../../../assets/icons/logo.svg'
+import logo from '../../assets/icons/logo.svg'
 
 interface BrightText {
     darkBackground?: boolean

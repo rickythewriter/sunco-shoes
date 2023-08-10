@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
-import arrowLeft from '../../../assets/icons/chevron-left.svg';
-import arrowRight from '../../../assets/icons/chevron-right.svg';
+import arrowLeft from '../../assets/icons/chevron-left.svg';
+import arrowRight from '../../assets/icons/chevron-right.svg';
 import './ProductCarousel.css';
 
 /* Mock Server on Port 4200 */

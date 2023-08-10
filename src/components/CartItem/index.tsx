@@ -1,8 +1,8 @@
 import { useState, useEffect, useContext } from "react"
 import { Link } from "react-router-dom";
-import minus from '../../../assets/icons/minus.svg'
-import plus from '../../../assets/icons/plus.svg'
-import { ShoppingCartContext, ShoppingCartContextType } from "../../../contexts/ShoppingCartContext";
+import minus from '../../assets/icons/minus.svg'
+import plus from '../../assets/icons/plus.svg'
+import { ShoppingCartContext, ShoppingCartContextType } from "../../contexts/ShoppingCartContext";
 import './CartItem.css'
 
 /* Mock Server on Port 4200 */

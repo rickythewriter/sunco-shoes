@@ -1,6 +1,6 @@
 import React from "react";
 import "./Footer.css";
-import Logo from '../subcomponents/Logo';
+import Logo from "../Logo";
 import instagram from '../../assets/icons/instagram.svg'
 import twitter from '../../assets/icons/twitter.svg'
 import youtube from '../../assets/icons/youtube.svg'

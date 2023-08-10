@@ -1,7 +1,7 @@
 import { useState, useContext } from "react"
-import minus from '../../../assets/icons/minus.svg'
-import plus from '../../../assets/icons/plus.svg'
-import { ShoppingCartContextType, ShoppingCartContext } from "../../../contexts/ShoppingCartContext"
+import minus from '../../assets/icons/minus.svg'
+import plus from '../../assets/icons/plus.svg'
+import { ShoppingCartContextType, ShoppingCartContext } from "../../contexts/ShoppingCartContext"
 import './ProductQuantitySelector.css'
 
 interface IProps {

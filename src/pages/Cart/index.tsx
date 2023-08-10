@@ -1,5 +1,5 @@
-import CartSummary from "../subcomponents/CartSummary";
-import CartItem from "../subcomponents/CartItem";
+import CartSummary from "../../components/CartSummary";
+import CartItem from "../../components/CartItem";
 import { useContext, useEffect } from "react";
 import { ShoppingCartContext, ShoppingCartContextType } from "../../contexts/ShoppingCartContext";
 import './Cart.css'

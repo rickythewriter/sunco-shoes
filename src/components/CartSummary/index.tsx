@@ -1,6 +1,6 @@
 import { useState, useContext, useEffect } from 'react'
-import arrowRight from '../../../assets/icons/arrow-right.svg'
-import { ShoppingCartContext, ShoppingCartContextType } from '../../../contexts/ShoppingCartContext'
+import arrowRight from '../../assets/icons/arrow-right.svg'
+import { ShoppingCartContext, ShoppingCartContextType } from '../../contexts/ShoppingCartContext'
 import './CartSummary.css'
 
 interface IProductInCart {

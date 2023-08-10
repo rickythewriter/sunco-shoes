@@ -1,8 +1,8 @@
 import "./ViewCartButton.css"
-import cart from '../../../assets/icons/cart.svg'
+import cart from '../../assets/icons/cart.svg'
 import { useContext } from "react"
 import { Link } from "react-router-dom"
-import { ShoppingCartContext, ShoppingCartContextType } from "../../../contexts/ShoppingCartContext"
+import { ShoppingCartContext, ShoppingCartContextType } from "../../contexts/ShoppingCartContext"
 
 export default function ViewCartButton() {
 

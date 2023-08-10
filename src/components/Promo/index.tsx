@@ -1,6 +1,6 @@
 import React from "react";
-import promoImg from '../../../assets/images/home-promotion.png'
-import arrowRight from '../../../assets/icons/arrow-right.svg'
+import promoImg from '../../assets/images/home-promotion.png'
+import arrowRight from '../../assets/icons/arrow-right.svg'
 import './Promo.css'
 
 export default function Promo() {

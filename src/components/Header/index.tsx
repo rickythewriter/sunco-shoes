@@ -1,6 +1,6 @@
 import "./Header.css";
-import Logo from '../subcomponents/Logo';
-import ViewCartButton from '../subcomponents/ViewCartButton'
+import Logo from "../Logo";
+import ViewCartButton from "../ViewCartButton";
 
 export default function Header() {
     return (

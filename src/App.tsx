@@ -3,10 +3,10 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Header from './components/Header'
 import Footer from './components/Footer'
-import Home from './components/Home';
-import Product from './components/Product';
+import Home from './pages/Home';
+import Product from './pages/Product';
 import ShoppingCartContextProvider from './contexts/ShoppingCartContext';
-import Cart from './components/Cart';
+import Cart from './pages/Cart';
 
 function App() {
   return (

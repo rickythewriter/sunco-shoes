@@ -1,5 +1,5 @@
-import Promo from '../subcomponents/Promo';
-import Recommendations from '../subcomponents/Recommendations';
+import Promo from '../../components/Promo';
+import Recommendations from '../../components/Recommendations';
 
 export default function Home() {
     return (
