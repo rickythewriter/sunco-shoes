@@ -1,4 +1,4 @@
-# Sun Co. Shoes - Demo E-Commerce Site
+# Sun Co. Shoes - Sample E-Commerce Home, Product, and Shopping Cart Pages
 
 A basic e-commerce store with items and a cart, based on this [design](https://www.figma.com/community/file/1265784090042206235).
 
